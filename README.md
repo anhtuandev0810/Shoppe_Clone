@@ -1,1 +1,1 @@
-# crown Funding clone
+# Shoppe Clone using Typescript
