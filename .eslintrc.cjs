@@ -1,8 +1,6 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path')
 module.exports = {
-  root: true,
-  env: { browser: true, es2020: true },
   extends: [
     // Chúng ta sẽ dùng các rule mặc định từ các plugin mà chúng ta đã cài.
     'eslint:recommended',
@@ -14,8 +12,8 @@ module.exports = {
     // Disable các rule mà eslint xung đột với prettier.
     // Để cái này ở dưới để nó override các rule phía trên!.
     'eslint-config-prettier',
-    'prettier'
-    // 'plugin:storybook/recommended'
+    'prettier',
+    'plugin:storybook/recommended'
   ],
   plugins: ['prettier'],
   settings: {
@@ -31,7 +29,6 @@ module.exports = {
       }
     }
   },
-  // eslint-disable-next-line no-dupe-keys
   env: {
     node: true
   },
